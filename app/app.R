@@ -129,7 +129,18 @@ assignment_card <- function(r) {
 
   strategy <- function(label, text) {
     if (is.na(text) || !nzchar(trimws(text))) return(NULL)
-    tagList(h6(label, class = "mt-2"), p(text))
+    # Blank lines start a new paragraph; single line breaks become <br>
+    text <- gsub("\r\n?", "\n", trimws(text))
+    paras <- strsplit(text, "\n[[:space:]]*\n")[[1]]
+    tagList(
+      h6(label, class = "mt-2"),
+      lapply(paras, \(para) {
+        lines <- strsplit(trimws(para), "\n", fixed = TRUE)[[1]]
+        content <- list(lines[1])
+        for (line in lines[-1]) content <- c(content, list(tags$br(), line))
+        p(content)
+      })
+    )
   }
 
   handout <- if (is_yes(r$Handout)) {
