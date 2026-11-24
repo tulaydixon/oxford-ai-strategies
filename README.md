@@ -1,10 +1,3 @@
----
-
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Oxford Faculty's Strategies to Limit or Incorporate AI and How These Strategies Map onto Liberal Arts Learning Outcomes — Shiny App
 
 A browsable directory of how faculty are limiting or incorporating AI use in their assignments, filterable by tag, professor, class, discipline, and learning outcome. Deployed as a static site via [shinylive](https://posit-dev.github.io/r-shinylive/), so it can be hosted for free on GitHub Pages with no server required.
