@@ -2,6 +2,8 @@
 
 A browsable directory of how faculty are limiting or incorporating AI use in their assignments, filterable by tag, professor, class, discipline, and learning outcome. Deployed as a static site via [shinylive](https://posit-dev.github.io/r-shinylive/), so it can be hosted for free on GitHub Pages with no server required.
 
+**Live app:** https://tulaydixon.github.io/oxford-ai-strategies/
+
 ## Project structure
 
 ```         
