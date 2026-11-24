@@ -1,0 +1,18 @@
+# R / RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+
+# Excel lock files
+~$*
+
+# Private master data: may contain hidden professor/class names and
+# handouts not approved for sharing. Only redacted, approved copies are
+# committed (app/data/OxData.csv, docs/).
+/OxData.xlsx
+/pdfs/
+
+# Generated locally by scripts/update_data.R; published copies live in docs/pdfs/
+/public_pdfs/
